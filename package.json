@@ -1,0 +1,20 @@
+{
+  "name": "ng2-material-import",
+  "version": "0.0.1",
+  "description": "A simple module to import material design for angular 2",
+  "main": "material-import.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bla"
+  },
+  "keywords": [
+    "angular2",
+    "material",
+    "import"
+  ],
+  "author": "“Joseph <“jbriggsr3@gmail.com”> (https://www.jbriggsr3.com)",
+  "license": "MIT"
+}
