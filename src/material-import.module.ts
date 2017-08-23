@@ -6,5 +6,6 @@ import 'hammerjs';
 @NgModule({
   imports: [BrowserAnimationsModule, MdRadioModule, MdInputModule, MdButtonModule, MdCheckboxModule],
   exports: [BrowserAnimationsModule, MdRadioModule, MdInputModule, MdButtonModule, MdCheckboxModule],
+  providers: []
 })
 export class MaterialImportModule { }
