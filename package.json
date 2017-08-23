@@ -1,6 +1,6 @@
 {
   "name": "ng2-material-import",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple module to import material design for angular 2",
   "main": "index.ts",
   "scripts": {
