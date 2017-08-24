@@ -2,7 +2,9 @@
   "name": "ng2-material-import",
   "version": "1.0.2",
   "description": "A simple module to import material design for angular 2",
-  "main": "index.ts",
+  "main": "./src/material-import.module.ts",
+  "module": "./src/material-import.module.ts",
+  "typings":"./src/material-import.module.ts" ,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,18 +20,20 @@
   "author": "“Joseph <“jbriggsr3@gmail.com”> (https://www.jbriggsr3.com)",
   "license": "MIT",
   "dependencies": {
-    "@angular/animations": "^4.3.4",
+    "@angular/animations": "^4.3.6",
     "@angular/cdk": "^2.0.0-beta.8",
-    "@angular/common": "^4.3.4",
-    "@angular/core": "^4.3.4",
     "@angular/material": "^2.0.0-beta.8",
-    "@angular/platform-server": "^4.3.5",
     "hammerjs": "^2.0.8"
   },
   "devDependencies": {
-    "@angular/cli": "^1.3.0",
-    "@angular/compiler": "^4.3.4",
-    "@angular/compiler-cli": "^4.3.5",
-    "typescript": "^2.4.2"
+    "@angular/common": "^4.3.6",
+    "@angular/compiler": "^4.3.6",
+    "@angular/compiler-cli": "^4.3.6",
+    "@angular/core": "^4.3.6",
+    "@angular/platform-browser": "^4.3.6",
+    "@angular/platform-server": "^4.3.6",
+    "rxjs": "^5.4.3",
+    "typescript": "^2.4.2",
+    "zone.js": "^0.8.17"
   }
 }
