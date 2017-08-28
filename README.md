@@ -1,17 +1,42 @@
 # ng2-material-import
-A simple module to import material design for angular 2
-
-For some reason I am not able to include the material modules.
-
-This is still a WIP. So there will be many things missing.
+A simple module to import ALL material design for angular 2
 
 ## Instalation
 
-`$> npm i --save angular/animations angular/cdk angular/material hammerjs npm i ng2-material-import`
+`$> npm i ng2-material-import`
+
+### Adding to app.module.ts
+
+```
+...
+import { MaterialImportModule } from "ng2-material-import";
+
+@NgModule({
+  imports: [
+    MaterialImportModule
+  ],
+})
+...
+```
+
+### Adding SCSS dependency for material
+There are two ways of doing this:
+Add `node_modules/ng2-material-import/src/theme/default.scss` to the styles path in .angular-cli.json.
+
+```
+...
+
+  "styles": [
+    "styles.css",
+    "../node_modules/ng2-material-import/src/theme/default.scss"
+  ],
+
+...
+```
+
+Or:
 
 Create a folder called themes. Inside that folder add a .SCSS file.
-
-This Scss file is required for material.
 inside that file add these lines:
 
 ```
@@ -50,10 +75,4 @@ use material as normal.
 </md-input-container>
 ```
 
-
-I will update this README as soon as I have more time.
-
-I have a few changes I want to do:
-
-* Selecting only specific materials to use
-* get the dependencies of material into this module, so as to only have to download this package and not all of the rest.
+Please check the [Angular 2 Material Component website](https://material.angular.io/components) for more information.
