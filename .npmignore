@@ -2,4 +2,3 @@ node_modules/
 .gitignore
 tsconfig.json
 src/
-!src/theme
