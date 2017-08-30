@@ -1,4 +1,5 @@
 # ng2-material-import
+
 A simple module to import ALL material design for angular 2
 
 ## Instalation
@@ -7,7 +8,7 @@ A simple module to import ALL material design for angular 2
 
 ### Adding to app.module.ts
 
-```
+```typescript
 ...
 import { MaterialImportModule } from "ng2-material-import";
 
@@ -20,15 +21,16 @@ import { MaterialImportModule } from "ng2-material-import";
 ```
 
 ### Adding SCSS dependency for material
-There are two ways of doing this:
-Add `node_modules/ng2-material-import/src/theme/default.scss` to the styles path in .angular-cli.json.
 
-```
+There are two ways of doing this:
+Add `node_modules/ng2-material-import/theme/default.scss` to the styles path in .angular-cli.json.
+
+```json
 ...
 
   "styles": [
     "styles.css",
-    "../node_modules/ng2-material-import/src/theme/default.scss"
+    "../node_modules/ng2-material-import/theme/default.scss"
   ],
 
 ...
@@ -39,7 +41,7 @@ Or:
 Create a folder called themes. Inside that folder add a .SCSS file.
 inside that file add these lines:
 
-```
+```scss
 @import '~@angular/material/theming';
 @include mat-core();
 $default-app-primary: mat-palette($mat-indigo);
@@ -52,7 +54,7 @@ $default-app-theme: mat-light-theme($default-app-primary, $default-app-accent, $
 
 After that add that file to the angular-cli styles section
 
-```
+```json
 ...
 
   "styles": [
@@ -69,7 +71,7 @@ restart `ng serve`
 
 use material as normal.
 
-```
+```html
 <md-input-container>
   <input mdInput placeholder="This is a placeholder" value="bla">
 </md-input-container>
