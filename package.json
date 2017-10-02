@@ -5,7 +5,8 @@
   "module": "./src/material-import.module.ts",
   "typings": "./index.d.ts",
   "scripts": {
-    "compile": "if [ -e ./dist ]; then rm -rf dist && node_modules/.bin/ngc -p tsconfig.json && cp package.json ./dist; else node_modules/.bin/ngc -p tsconfig.json && cp package.json ./dist; fi",
+    "compile": "if [ -e ./dist ]; then rm -rf dist && node_modules/.bin/ngc -p tsconfig.json && cp package.json README.md ./dist; else node_modules/.bin/ngc -p tsconfig.json && cp package.json README.md ./dist; fi",
+    "publish": " cd ./dist && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
