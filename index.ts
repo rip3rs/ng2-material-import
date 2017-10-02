@@ -1,1 +1,1 @@
-export * from './dist/material-import.module';
+export * from './src/material-import.module';
