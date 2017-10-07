@@ -21,7 +21,6 @@
     "./src/material-import.module.ts"
   ],
   "angularCompilerOptions": {
-    "skipTemplateCodegen": true,
-    "genDir": "compiled"
+    "skipTemplateCodegen": true
   }
 }
