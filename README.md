@@ -2,6 +2,13 @@
 
 A simple module to import ALL material design for angular 2
 
+**NOTE**
+This version is up to date with angular 2 material, so the inputs are no longer `md` but `mat`
+If you have a project that uses `md` (eg: `<md-imput></md-input>`) it will now be `mat` (eg: `<mat-input></mat-input>`)
+
+This is the same for the attributes.
+Before `<input mdInput>` after `<input matInput>`
+
 ## Instalation
 
 `$> npm i ng2-material-import`
