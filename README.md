@@ -79,9 +79,9 @@ restart `ng serve`
 use material as normal.
 
 ```html
-<md-input-container>
-  <input mdInput placeholder="This is a placeholder" value="bla">
-</md-input-container>
+<mat-input-container>
+  <input matInput placeholder="This is a placeholder" value="bla">
+</mat-input-container>
 ```
 
 Please check the [Angular 2 Material Component website](https://material.angular.io/components) for more information.
