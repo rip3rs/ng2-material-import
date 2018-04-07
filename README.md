@@ -9,9 +9,13 @@ If you have a project that uses `md` (eg: `<md-imput></md-input>`) it will now b
 This is the same for the attributes.
 Before `<input mdInput>` after `<input matInput>`
 
+## Changes
+
+- (7/4/2018): Updated package.json to have the most recent and compatible versions with angular2
+
 ## Instalation
 
-`$> npm i ng2-material-import`
+`$> npm i --save-dev ng2-material-import`
 
 ### Adding to app.module.ts
 
