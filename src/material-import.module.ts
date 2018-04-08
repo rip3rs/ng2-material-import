@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
 import {
   MatAutocompleteModule,
   MatCheckboxModule,
@@ -27,9 +28,9 @@ import {
   MatSnackBarModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatStepperModule
 } from '@angular/material';
-import 'hammerjs';
 
 @NgModule({
   imports: [
@@ -52,6 +53,7 @@ import 'hammerjs';
     MatGridListModule,
     MatCardModule,
     MatTabsModule,
+    MatStepperModule,
     //buttons indicators & icons
     MatButtonModule,
     MatButtonToggleModule,
@@ -88,6 +90,7 @@ import 'hammerjs';
     MatGridListModule,
     MatCardModule,
     MatTabsModule,
+    MatStepperModule,
     //buttons indicators & icons
     MatButtonModule,
     MatButtonToggleModule,
