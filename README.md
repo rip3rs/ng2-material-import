@@ -11,8 +11,9 @@ Before `<input mdInput>` after `<input matInput>`
 
 ## Changes
 
-- (8/4/2018): Added Stepper module { MatStepperModule }
+- (16/7/2018): Updated package.json
 - (7/4/2018): Updated package.json to have the most recent and compatible versions with angular2
+- (8/4/2018): Added Stepper module { MatStepperModule }
 
 ## Instalation
 
