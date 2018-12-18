@@ -17,8 +17,7 @@
     "node_modules"
   ],
   "files": [
-    "index.ts",
-    "./src/material-import.module.ts"
+    "./src/index.ts"
   ],
   "angularCompilerOptions": {
     "skipTemplateCodegen": true
