@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "ng2-material-import",
-  "version": "1.3.12",
+  "version": "1.3.13",
   "main": "bundles/ng2-material-import.umd.js",
   "module": "fesm5/ng2-material-import.js",
   "typings": "ng2-material-import.d.ts",
