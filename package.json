@@ -1,6 +1,7 @@
 {
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "ng2-material-import",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "main": "./dist/index",
   "module": "./dist/src/material-import.module",
   "typings": "./dist/index.d",
@@ -19,11 +20,17 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "yarn run prepack:tsc && yarn run prepack:theme",
+    "prepack": "ng-packagr -p package.json",
     "prepack:tsc": "tsc -p tsconfig.json",
     "prepack:theme": "cp -a src/theme dist"
   },
-  "dependencies": {
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {
     "@angular/animations": "^7.1.3",
     "@angular/cdk": "^7.1.1",
     "@angular/common": "^7.1.3",
@@ -39,7 +46,9 @@
     "@angular/compiler": "^7.1.3",
     "@angular/compiler-cli": "^7.1.3",
     "@angular/core": "^7.1.3",
+    "ng-packagr": "^4.4.5",
     "rxjs": "^6.2.2",
+    "tsickle": "^0.34.0",
     "typescript": ">=3.1.1 <3.2",
     "zone.js": "^0.8.25"
   }
