@@ -1,6 +1,0 @@
-node_modules/
-.gitignore
-tsconfig.json
-src/
-package-lock.json
-package.json
