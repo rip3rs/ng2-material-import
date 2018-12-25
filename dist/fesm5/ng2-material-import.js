@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 
@@ -17,7 +16,7 @@ var MaterialImportModule = /** @class */ (function () {
                         MatExpansionModule,
                         MatNativeDateModule,
                         MatRippleModule,
-                        BrowserAnimationsModule,
+                        // BrowserAnimationsModule,
                         //form controls
                         MatAutocompleteModule,
                         MatCheckboxModule,
@@ -51,14 +50,14 @@ var MaterialImportModule = /** @class */ (function () {
                         //data files
                         MatTableModule,
                         MatSortModule,
-                        MatPaginatorModule,
+                        MatPaginatorModule
                     ],
                     exports: [
                         MatDividerModule,
                         MatExpansionModule,
                         MatNativeDateModule,
                         MatRippleModule,
-                        BrowserAnimationsModule,
+                        // BrowserAnimationsModule,
                         //form controls
                         MatAutocompleteModule,
                         MatCheckboxModule,

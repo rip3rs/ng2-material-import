@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/platform-browser/animations'), require('hammerjs'), require('@angular/material')) :
-    typeof define === 'function' && define.amd ? define('ng2-material-import', ['exports', '@angular/core', '@angular/platform-browser/animations', 'hammerjs', '@angular/material'], factory) :
-    (factory((global['ng2-material-import'] = {}),global.ng.core,global.ng.platformBrowser.animations,null,global.ng.material));
-}(this, (function (exports,core,animations,hammerjs,material) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('hammerjs'), require('@angular/material')) :
+    typeof define === 'function' && define.amd ? define('ng2-material-import', ['exports', '@angular/core', 'hammerjs', '@angular/material'], factory) :
+    (factory((global['ng2-material-import'] = {}),global.ng.core,null,global.ng.material));
+}(this, (function (exports,core,hammerjs,material) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -18,7 +18,7 @@
                             material.MatExpansionModule,
                             material.MatNativeDateModule,
                             material.MatRippleModule,
-                            animations.BrowserAnimationsModule,
+                            // BrowserAnimationsModule,
                             //form controls
                             material.MatAutocompleteModule,
                             material.MatCheckboxModule,
@@ -52,14 +52,14 @@
                             //data files
                             material.MatTableModule,
                             material.MatSortModule,
-                            material.MatPaginatorModule,
+                            material.MatPaginatorModule
                         ],
                         exports: [
                             material.MatDividerModule,
                             material.MatExpansionModule,
                             material.MatNativeDateModule,
                             material.MatRippleModule,
-                            animations.BrowserAnimationsModule,
+                            // BrowserAnimationsModule,
                             //form controls
                             material.MatAutocompleteModule,
                             material.MatCheckboxModule,

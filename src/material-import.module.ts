@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import 'hammerjs';
+import { NgModule } from "@angular/core";
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import "hammerjs";
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -34,7 +34,7 @@ import {
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule
-} from '@angular/material';
+} from "@angular/material";
 
 @NgModule({
   imports: [
@@ -43,7 +43,7 @@ import {
     MatNativeDateModule,
     MatRippleModule,
 
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     //form controls
     MatAutocompleteModule,
     MatCheckboxModule,
@@ -77,7 +77,7 @@ import {
     //data files
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule,
+    MatPaginatorModule
   ],
   exports: [
     MatDividerModule,
@@ -85,7 +85,7 @@ import {
     MatNativeDateModule,
     MatRippleModule,
 
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     //form controls
     MatAutocompleteModule,
     MatCheckboxModule,
@@ -122,5 +122,4 @@ import {
     MatPaginatorModule
   ]
 })
-
 export class MaterialImportModule {}

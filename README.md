@@ -33,6 +33,24 @@ import { MaterialImportModule } from "ng2-material-import";
 ...
 ```
 
+**NOTE**
+
+If you are using `BrowserModule` which you will most likely will...
+
+In your `app.module.ts` remove `BrowserModule` and add `BrowserAnimationsModule`
+
+```typescript
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialImportModule } from "ng2-material-import";
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserAnimationsModule, MaterialImportModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
+
 ### Adding SCSS dependency for material
 
 There are two ways of doing this:
@@ -55,14 +73,17 @@ Create a folder called themes. Inside that folder add a .SCSS file.
 inside that file add these lines:
 
 ```scss
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 @include mat-core();
 $default-app-primary: mat-palette($mat-indigo);
-$default-app-accent:  mat-palette($mat-pink, A200, A100, A400);
-$default-app-warn:    mat-palette($mat-red);
-$default-app-theme: mat-light-theme($default-app-primary, $default-app-accent, $default-app-warn);
+$default-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$default-app-warn: mat-palette($mat-red);
+$default-app-theme: mat-light-theme(
+  $default-app-primary,
+  $default-app-accent,
+  $default-app-warn
+);
 @include angular-material-theme($default-app-theme);
-
 ```
 
 After that add that file to the angular-cli styles section
@@ -86,7 +107,7 @@ use material as normal.
 
 ```html
 <mat-input-container>
-  <input matInput placeholder="This is a placeholder" value="bla">
+  <input matInput placeholder="This is a placeholder" value="bla" />
 </mat-input-container>
 ```
 
